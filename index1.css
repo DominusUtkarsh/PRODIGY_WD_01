@@ -1,0 +1,60 @@
+/* Basic reset for padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the navigation bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 15px 0;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+/* Style for the navigation menu */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 20px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for menu items */
+.nav-link:hover {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* Change style on scroll */
+.scrolled .navbar {
+  background-color: #222;
+}
+
+/* Page sections for demo purposes */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #333;
+}
+
+#home { background-color: #f4f4f4; }
+#about { background-color: #eaeaea; }
+#services { background-color: #ddd; }
+#contact { background-color: #ccc; }
